@@ -1,0 +1,104 @@
+* {margin-top: 0;margin-left: 0;}
+html,body,#app,.wrapper{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+body{
+    font-family:"Helvetica Neue",Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+}
+
+/* -----panel开始-----*/
+.panel {
+  border-radius: 0;
+  padding: 15px 20px 15px 20px;
+  border-width: 0;
+}
+
+.panel .panel-header {
+  height: 38px;
+  padding: 0;
+  background-color: #f2f2f2;
+  background-image: none;
+  border: 1px solid #C3C3D6;
+  filter: none;
+  position: relative;
+}
+
+.panel-search, .panel-result {
+  border-right: 1px solid #C5C5C5;
+  display: block;
+  height: 38px;
+  position: absolute;
+  width: 40px;
+  text-align: center;
+}
+
+.panel-search i {
+  margin-top: 10px;
+}
+
+.panel-header h3 {
+  padding-left: 45px;
+  line-height: 38px;
+  text-align: left;
+}
+
+.panel .panel-body {
+  padding: 0;
+  border: 1px solid #C3C3D6;
+  margin-top: -1px;
+  background: #FFFFFF;
+}
+
+.panel-header .panel-bar {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+/* ----- panel结束-----*/
+
+/* ----- row|col开始-----*/
+.item-right {
+  text-align: right;
+}
+.col-right {
+  text-align: right;
+}
+.col-left {
+  text-align: left;
+}
+.el-col {
+  margin-left: 0px;
+  margin-top: 10px;
+}
+/* ----- row|col结束-----*/
+
+
+/* ----- el-container开始-----*/
+.el-container .el-aside {
+  /*background-color: #D3DCE6;*/
+  color: #333;
+  text-align: center;
+  line-height: 200px;
+  border: 1px solid #C3C3D6;
+}
+/* ----- el-container结束-----*/
+
+/* ----- 宽度开始-----*/
+.w60 {
+  width: 60%;
+}
+.w70 {
+  width: 70%;
+}
+/* ----- 宽度结束-----*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: inherit;
+  font-weight: bold;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
