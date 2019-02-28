@@ -49,7 +49,7 @@
     },
     methods: {
       login () {
-
+        this.account.password = this.$global.recombine(this.account.password)
         this.$http.post('/user/login', this.account).then((response) => {
           let data = response.data;
           if (data.code === 0) {
