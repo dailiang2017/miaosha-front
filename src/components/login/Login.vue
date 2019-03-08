@@ -49,10 +49,13 @@
     },
     methods: {
       login () {
-        this.account.password = this.$global.recombine(this.account.password)
-        this.$http.post('/user/login', this.account).then((response) => {
+        let param = {
+          username: this.account.username,
+          password: this.$global.recombine(this.account.password)
+        }
+        this.$http.post('/user/login', param).then((response) => {
           let data = response.data;
-          if (data.code === 0) {
+          if (data.success === true) {
             this.$router.push({path: '/index'});
           }else{
             this.$message(data.msg);

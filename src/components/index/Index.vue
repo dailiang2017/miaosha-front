@@ -1,5 +1,20 @@
 <template>
-  <div>杨晶晶你好</div>
+  <section>
+    <el-carousel :interval="4000" type="card" height="500px">
+      <el-carousel-item>
+        <img src="../../../static/pic/index/求职攻略.jpg" class="image" style="width: 100%;">
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="../../../static/pic/index/求职礼仪.jpg" class="image" style="width: 100%;">
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="../../../static/pic/index/好工作轻松找.jpg" class="image" style="width: 100%;">
+      </el-carousel-item>
+      <el-carousel-item>
+        <img src="../../../static/pic/index/成功.jpg" class="image" style="width: 100%;">
+      </el-carousel-item>
+    </el-carousel>
+  </section>
 </template>
 <style>
   .el-carousel__item h3 {
