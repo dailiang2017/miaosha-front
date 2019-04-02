@@ -5,6 +5,7 @@ import Home from '@/components/navi/Home'
 import Index from '@/components/index/Index'
 import GoodsList from '@/components/miaosha/GoodsList'
 import OrderList from '@/components/miaosha/OrderList'
+import Error from '@/components/common/Error'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
         {path: '/GoodsList', component: GoodsList, name: '秒杀商品'},
         {path: '/OrderList', component: OrderList, name: '我的订单'}
       ]
+    },
+    {
+      path: '/Error',
+      name: 'Error',
+      component: Error
     }
   ]
 })

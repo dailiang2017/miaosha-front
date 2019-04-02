@@ -17,8 +17,19 @@ Vue.prototype.$http = axios
 Vue.prototype.$global = global
 
 axios.interceptors.response.use((response) => {
-  if (response.headers["x-auth-token"]) {
-    router.push({path: '/'});
+  // if (!response.headers["x-auth-token"]) {
+  //   router.push({path: '/'});
+  // }
+  if (!response.data.success) {
+    switch(response.data.code) {
+      case 601:
+        router.push({path: '/'});
+        break
+      default:
+        sessionStorage.setItem(global.error_key, response.data.msg)
+        router.push({path: '/Error'});
+        break
+    }
   }
   return response
 }, (error) => {
